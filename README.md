@@ -1,4 +1,4 @@
-Here's a detailed README.md for your project:
+Please note that I made this on a Mac, I tried to add directions for windows machines but could not test on a windows device. 
 
 ```markdown:README.md
 # Video Face Detection Application

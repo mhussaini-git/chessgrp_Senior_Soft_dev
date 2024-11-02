@@ -5,7 +5,7 @@ Please note that I made this on a Mac, I tried to add directions for windows mac
 
 A full-stack application that performs real-time face detection on webcam video feeds, built with React, FastAPI, and MongoDB.
 
-## Features
+Features
 
 - Live webcam recording and streaming
 - Real-time face detection using MediaPipe
@@ -14,35 +14,35 @@ A full-stack application that performs real-time face detection on webcam video 
 - Metadata storage and retrieval
 - Containerized application using Docker
 
-## Architecture
+Architecture
 
 The application consists of three main components:
 
-1. **Frontend (React)**
+1. Frontend (React)
    - Webcam video capture
    - Live video preview
    - Processed video playback
    - ROI data visualization
 
-2. **Backend (FastAPI)**
+2. Backend (FastAPI)
    - Video processing API
    - Face detection using MediaPipe
    - ROI calculation and storage
    - Video streaming endpoints
 
-3. **Database (MongoDB)**
+3. Database (MongoDB)
    - Stores video metadata
    - Stores ROI coordinates
    - Maintains processing history
 
-## Prerequisites
+Prerequisites
 
 - Docker and Docker Compose
 - Node.js 18+ (for local development)
 - Python 3.11+ (for local development)
 - Modern web browser with webcam support
 
-## Quick Start
+ Quick Start
 
 1. Clone the repository:
 ```bash
@@ -60,9 +60,9 @@ docker-compose up --build
    - Backend API: http://localhost:8000
    - API Documentation: http://localhost:8000/docs
 
-## Development Setup
+ Development Setup
 
-### Frontend Development
+ Frontend Development
 
 ```bash
 cd frontend
@@ -72,7 +72,7 @@ npm start
 
 The frontend development server will run on http://localhost:3000
 
-### Backend Development
+ Backend Development
 
 ```bash
 cd backend
@@ -84,9 +84,9 @@ uvicorn src.main:app --reload
 
 The backend development server will run on http://localhost:8000
 
-## API Endpoints
+ API Endpoints
 
-### Video Processing
+ Video Processing
 
 - `POST /api/video/upload`
   - Uploads and processes video feed
@@ -98,7 +98,7 @@ The backend development server will run on http://localhost:8000
 - `GET /api/video/roi/{video_id}`
   - Returns ROI data for the video
 
-## Project Structure
+ Project Structure
 
 ```
 .
@@ -122,7 +122,7 @@ The backend development server will run on http://localhost:8000
 └── README.md
 ```
 
-## Key Technologies
+ Key Technologies
 
 - **Frontend**
   - React 18
@@ -143,7 +143,7 @@ The backend development server will run on http://localhost:8000
   - Docker Compose
   - MongoDB
 
-## Configuration
+ Configuration
 
 Environment variables can be configured in the `.env` file:
 
@@ -159,7 +159,7 @@ CORS_ORIGINS=http://localhost:3000
 MONGO_INITDB_DATABASE=video_processing
 ```
 
-## Running in Production
+ Running in Production
 
 For production deployment, use the production Docker Compose configuration:
 
@@ -167,23 +167,8 @@ For production deployment, use the production Docker Compose configuration:
 docker-compose -f docker-compose.prod.yml up --build
 ```
 
-## Testing
-
-### Frontend Tests
-
-```bash
-cd frontend
-npm test
 ```
-
-### Backend Tests
-
-```bash
-cd backend
-pytest
-```
-
-## Common Issues
+# Common Issues
 
 1. **Webcam Access**
    - Ensure your browser has permission to access the webcam
@@ -198,7 +183,7 @@ pytest
    - Check Docker logs for detailed error messages
 
 
-## Acknowledgments
+ Acknowledgments
 
 - MediaPipe for face detection
 - FastAPI for the backend framework

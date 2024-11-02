@@ -1,6 +1,7 @@
 Please note that I made this on a Mac, I tried to add directions for windows machines but could not test on a windows device. 
 
-```markdown:README.md
+Can find the architecture diagram under image.png in the root directory 
+
 # Video Face Detection Application
 
 A full-stack application that performs real-time face detection on webcam video feeds, built with React, FastAPI, and MongoDB.
